@@ -8,7 +8,6 @@
 # 3つのloopを回すとO(N^3)となり、N = 2000の制約の元では、N^3 <= 2000^3で実行時間に間に合わない問題が生じる(TLE)
 
 # 制約を利用して、xとyのみを動かすことにして計算量を減らす
-
 # z <= min(N, M-x-y)を使う
 
 N, M = map(int, input().split())
@@ -16,7 +15,7 @@ N, M = map(int, input().split())
 ans = 0
 
 for x in range(1, N+1):
-    for y in range(1, N+1):
+    for y in range(1, N+1)
         max_z = min(N, M-x-y)
         if max_z <= 0:
             continue
